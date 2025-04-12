@@ -8,6 +8,11 @@ export default function AppDirectory() {
       name: "Perplexity Visualization",
       description: "Visualize and explore text perplexity metrics",
     },
+    {
+      id: "recommendation-optimization",
+      name: "Recommendation Optimization",
+      description: "Visualize how recommendation systems learn from user preferences",
+    },
     // Add more apps here as they are developed
   ];
 
