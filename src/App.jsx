@@ -1,16 +1,18 @@
-import './App.css'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import "./App.css";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PerplexityVisualization from "./components/PerplexityVisualization.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/llm-apps/">
       <Routes>
-        <Route path="/apps/perplexity-visualization" element={<PerplexityVisualization />} />
-        <Route path="/" element={<Navigate to="/apps/perplexity-visualization" replace />} />
+        <Route
+          path="/perplexity-visualization"
+          element={<PerplexityVisualization />}
+        />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
