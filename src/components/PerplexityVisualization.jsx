@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import BackButton from './BackButton';
 
 export default function PerplexityVisualization() {
   const [inputText, setInputText] = useState("the cat sat on the mat");
@@ -174,6 +175,7 @@ export default function PerplexityVisualization() {
 
   return (
     <div className="flex flex-col p-6 max-w-4xl mx-auto bg-gray-50 rounded-lg shadow-md">
+      <BackButton to="/" label="Back to App Directory" />
       <h1 className="text-2xl font-bold mb-4 text-blue-700">Understanding Perplexity: Unigram vs LLM</h1>
 
       <div className="mb-6">
